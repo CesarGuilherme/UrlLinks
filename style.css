@@ -8,6 +8,7 @@
     inset -2px -2px 3px #22262a;
   --switch-bg: #22262a url(./assets/MoonStars.svg) no-repeat center;
   --switch-bg-color: #5a5e97;
+  --highlight-color: #ffbf00;
 }
 
 .light {
@@ -19,6 +20,7 @@
     inset -2px -2px 3px #fff9, inset 4px 4px 10px #0003, inset 2px 2px 3px #0001;
   --switch-bg: white url(./assets/Sun.svg) no-repeat center;
   --switch-bg-color: #ffbf00;
+  --highlight-color: #5a5e97;
 }
 
 * {
@@ -82,7 +84,6 @@ body * {
   border: 0;
   border-radius: 50%;
   box-shadow: var(--box-shadow-color);
-
   position: absolute;
   top: 50%;
   right: 3px;
@@ -91,9 +92,17 @@ body * {
   transition: 0.4s;
 }
 
+#switch button:hover {
+  outline: 2px solid var(--highlight-color);
+}
+
 .light #switch button {
   top: 3px;
   transform: translateX(-34px);
+}
+
+.light #switch button:hover {
+  outline: 2px solid var(--highlight-color);
 }
 
 #switch span {
