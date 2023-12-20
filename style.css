@@ -4,7 +4,7 @@
   --gray: #797d7f;
   --text-color: white;
   --box-shadow-color: 1px 1px 1px #070911, -1px -1px 1px #22262a;
-  --box-shadow-color-hover: inset 3px 3px 15px #070911,
+  --box-shadow-color-hover: inset 1px 1px 3px #070911,
     inset -2px -2px 3px #22262a;
   --switch-bg: #22262a url(./assets/MoonStars.svg) no-repeat center;
   --switch-bg-color: #5a5e97;
